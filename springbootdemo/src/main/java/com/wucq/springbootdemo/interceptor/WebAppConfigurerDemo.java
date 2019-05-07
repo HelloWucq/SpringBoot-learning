@@ -2,6 +2,7 @@ package com.wucq.springbootdemo.interceptor;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /**
@@ -15,4 +16,5 @@ public class WebAppConfigurerDemo extends WebMvcConfigurationSupport {
         registry.addInterceptor(new InterceptorDemo()).addPathPatterns("/**");
         super.addInterceptors(registry);
     }
+
 }
