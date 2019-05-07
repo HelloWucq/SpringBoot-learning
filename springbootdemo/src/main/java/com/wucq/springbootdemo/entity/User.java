@@ -2,7 +2,6 @@ package com.wucq.springbootdemo.entity;
 
 import java.io.Serializable;
 
-import org.apache.ibatis.javassist.SerialVersionUID;
 
 /**
  * User
