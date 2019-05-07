@@ -2,10 +2,13 @@ package com.wucq.springbootdemo.entity;
 
 import java.io.Serializable;
 
+import org.apache.ibatis.javassist.SerialVersionUID;
+
 /**
  * User
  */
 public class User implements Serializable{
+    private static final long serialVersionUID=-8289458924758L;
 
     private int id;
     private String username;
