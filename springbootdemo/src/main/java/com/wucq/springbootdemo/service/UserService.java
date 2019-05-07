@@ -26,6 +26,11 @@ public class UserService {
         return user;
     }
 
+    public List<User> findAllUsers() throws Exception{
+        List<User> result=userMapper.findAllUsers();
+        return result;        
+    }
+
     public void inserUser(User user) throws Exception {
         userMapper.inserUser(user);
 

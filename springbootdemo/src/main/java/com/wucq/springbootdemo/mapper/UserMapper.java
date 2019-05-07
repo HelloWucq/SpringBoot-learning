@@ -14,6 +14,8 @@ public interface UserMapper {
     public User findUserByName(String username) throws Exception; 
 
     public void inserUser(User user) throws Exception;
+    
+    public List<User> findAllUsers()throws Exception;
 
     public void deleteUserById(int userId) throws Exception;
 

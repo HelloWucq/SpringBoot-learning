@@ -2,6 +2,7 @@ package com.wucq.springbootdemo.controller;
 
 import java.util.List;
 
+import com.github.pagehelper.PageHelper;
 import com.wucq.springbootdemo.entity.User;
 import com.wucq.springbootdemo.service.UserService;
 
@@ -27,6 +28,13 @@ public class UserController {
   @RequestMapping(value = "/findUserById")
   public User findUserById(@RequestParam int id) throws Exception {
     User result= userService.findUserById(id);
+    return result;
+  }
+
+  @RequestMapping(value="/findAllUsers")
+  public List<User> findAllUsers() throws Exception{
+    PageHelper.startPage(1,1);
+    List<User> result=userService.findAllUsers();
     return result;
   }
 }
