@@ -3,7 +3,6 @@ package com.wucq.springbootdemo.aspect;
 import java.util.Arrays;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.websocket.OnClose;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
